@@ -1,4 +1,4 @@
-```js
+```js { "props": { "className": "bg-color" } }
 <Buttons className="button fill" title="Fill in" />
 <Buttons className="button pulse" title="Pulse" />
 <Buttons className="button close" title="Close" />
@@ -8,3 +8,7 @@
 <Buttons className="button offset" title="Offset" />
 
 ```
+
+<!-- ```js static
+import React from "react";
+``` -->
