@@ -98,15 +98,15 @@ const styles = () => ({
     },
     heading1: {
         color: "white",
-        fontSize: "40px",
+        fontSize: "50px",
         textAlign: "center",
         lineHeight: "50px",
         marginBottom: "15px",
         paddingTop: "40px",
     },
     heading2: {
-        color: "#3A3A3A",
-        fontSize: "18px",
+        color: "#fff",
+        fontSize: "28px",
         textAlign: "center",
         lineHeight: "20px",
         marginBottom: "45px",
