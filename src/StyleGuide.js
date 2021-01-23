@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Styled from "react-styleguidist/lib/client/rsg-components/Styled";
 import styles from "./StyleGuide.styles";
-// import Logo from "../node_modules/sugui/src/logos/suguiLogo";
+import Logo from "./Logo";
 
 class StyleGuideRenderer extends Component {
     constructor(props) {
@@ -45,9 +45,11 @@ class StyleGuideRenderer extends Component {
                             className={classes.close}
                             onClick={() => this.setState({ active: !this.state.active })}
                         />
-                        <div className={classes.logo}>{/* <Logo /> */}</div>
-                        {toc}
+                        <div className={classes.logo}>
+                            <Logo />
+                        </div>
                         {version && <h2 className={classes.version}>{version}</h2>}
+                        {toc}
                     </div>
                 )}
                 <div className={classes.hero}>
@@ -68,10 +70,10 @@ class StyleGuideRenderer extends Component {
                                 y2="-25.5078125%"
                                 id="linearGradient-1"
                             >
-                                <stop stopColor="#E89700" offset="0%" />
-                                <stop stopColor="#FFB135" offset="17.2957751%" />
-                                <stop stopColor="#CB37D0" offset="80.1567622%" />
-                                <stop stopColor="#9C2AA0" offset="100%" />
+                                <stop stopColor="#00BCD4" offset="0%" />
+                                <stop stopColor="#00BCD4" offset="17.2957751%" />
+                                <stop stopColor="#00BCD4" offset="80.1567622%" />
+                                <stop stopColor="#00BCD4" offset="100%" />
                             </linearGradient>
                         </defs>
                         <g
@@ -103,7 +105,7 @@ class StyleGuideRenderer extends Component {
                         <div className={classes.menuBar} />
                     </button>
                     <div className={classes.heroContent}>
-                        <div className={classes.heading1}>BabkoUI Design System</div>
+                        <div className={classes.heading1}>UItools Design System</div>
                         <div className={classes.heading2}>
                             UX and UI component guidelines for building web apps
                         </div>
@@ -113,7 +115,7 @@ class StyleGuideRenderer extends Component {
                     {components}
                     {children}
                 </div>
-                <div className={classes.footer}>
+                <footer className={classes.footer}>
                     Made with{" "}
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +135,7 @@ class StyleGuideRenderer extends Component {
                     >
                         Nikita Babko
                     </a>
-                </div>
+                </footer>
             </div>
         );
     }
