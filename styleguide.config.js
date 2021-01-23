@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
     title: "UI by Nikita Babko",
-    version: "v1.0.0-alpha.1",
+    version: "v1.0.0-alpha.5",
     template: {
         head: {
             links: [
@@ -29,7 +29,7 @@ module.exports = {
         color: {
             base: "#333",
             light: "#333",
-            link: "#333",
+            link: "#00BCD4",
             linkHover: "#FF5722",
             focus: "#009CB0",
             baseBackground: "#fff",
@@ -48,7 +48,7 @@ module.exports = {
         // SectionsRenderer: path.join(__dirname, "src/SectionsRenderer"),
         // ComponentsListRenderer: path.join(__dirname, "src/Logo"),
         // HeadingRenderer: path.join(__dirname, "src/SectionsRenderer"),
-        // TableOfContentsRenderer: path.join(__dirname, "src/Logo"),
+        // TableOfContentsRenderer: path.join(__dirname, "src/Toc"),
     },
     sections: [
         {
