@@ -8,7 +8,3 @@
 <Buttons className="button offset" title="Offset" />
 
 ```
-
-<!-- ```js static
-import React from "react";
-``` -->
